@@ -1,3 +1,51 @@
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  navegacionFija();
+
+  scrollNav();
+});
+
+function navegacionFija() {
+  const header = document.querySelector(".header");
+  const productos = document.querySelector(".productos");
+
+  document.addEventListener("scroll", function () {
+    const datos = productos.getBoundingClientRect();
+
+    // Si el bottom es menor a 0, significa que la sección ya se fue hacia arriba
+    if (datos.bottom < 1) {
+      header.classList.add("fixed-top");
+      
+    } else {
+      header.classList.remove("fixed-top");
+
+    }
+  });
+}
+
+function scrollNav() {
+// 1. Buscamos el botón por su ID
+const btnVerMas = document.querySelector('#boton-ver-mas');
+
+if (btnVerMas) {
+    btnVerMas.addEventListener('click', () => {
+        // 2. Buscamos la sección por su NUEVA clase única
+        const seccionTienda = document.querySelector('.ver-productos');
+
+        if (seccionTienda) {
+            // 3. El desplazamiento suave
+            seccionTienda.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start' // Alinea el inicio de la sección al tope de la pantalla
+            });
+        }
+    });
+}
+}
+
+
+
 // Arreglo para guardar los productos
 let carrito = [];
 

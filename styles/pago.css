@@ -1,0 +1,24 @@
+/* ============================================= */
+/* ESTILOS ESPECÍFICOS DE LA PÁGINA DE PAGO      */
+/* Desarrollado por luisdavid_dev               */
+/* ============================================= */
+
+/* Miniaturas dentro del resumen */
+.img-thumb-cart {
+  width: 55px;
+  height: 55px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 12px;
+}
+
+/* Efecto hover en los ítems del resumen */
+.list-group-item:hover {
+  background-color: #f8f9fa;
+}
+
+/* Ajuste de texto en datos de envío */
+#datos-envio p {
+  font-size: 0.95rem;
+  margin-bottom: 0.3rem;
+}

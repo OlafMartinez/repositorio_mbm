@@ -1,0 +1,54 @@
+/* ============================================= */
+/* ESTILOS EXCLUSIVOS PARA EL FORMULARIO DE CLIENTE */
+/* Desarrollado por luisdavid_dev               */
+/* Sin animaciones de movimiento al hacer hover  */
+/* ============================================= */
+
+/* Eliminar cualquier transformación en tarjetas y botones */
+.card:hover,
+.btn:hover,
+.btn-success:hover,
+.btn-warning:hover,
+.btn-outline-danger:hover,
+.btn-outline-warning:hover {
+  transform: none !important;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+/* Mantener solo cambios de color o sombra sutiles, sin movimiento */
+.card:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08) !important;
+}
+
+.btn-success:hover {
+  background-color: #218838 !important;
+}
+
+.btn-warning:hover {
+  background-color: #e0a800 !important;
+}
+
+.btn-outline-danger:hover {
+  background-color: #dc3545 !important;
+  color: white !important;
+}
+
+/* Asegurar que las imágenes del resumen mantengan su tamaño fijo */
+.img-thumb-cart {
+  width: 55px;
+  height: 55px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 12px;
+}
+
+/* Hover en lista de productos (solo cambio de fondo, sin movimiento) */
+.list-group-item:hover {
+  background-color: #f8f9fa;
+  transform: none !important;
+}
+
+/* Evitar cualquier animación de pop o escala en el badge */
+.badge {
+  transition: none !important;
+}

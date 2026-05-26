@@ -1,0 +1,17 @@
+/* ============================================= */
+/* ESTILOS EXCLUSIVOS PARA LA PÁGINA DE CHECKOUT */
+/* Desarrollado por luisdavid_dev               */
+/* ============================================= */
+
+/* Centrado vertical perfecto del contenedor principal */
+.centrar-checkout {
+  min-height: 80vh;
+}
+/* En carrito.css */
+.img-thumb-cart {
+  width: 55px !important;
+  height: 55px !important;
+  object-fit: cover !important;
+  border-radius: 8px !important;
+  margin-right: 12px !important;
+}
